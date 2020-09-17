@@ -1,6 +1,6 @@
-# Project 1 Read Me File
+# Project 2 Read Me File
 + By: Becca Lange
-+ Production URL: <http://e2p1.beccalange.me>
++ Production URL: <http://e2p2.beccalange.me>
 
 ## Outside Resources
 *list of outside Resources*
