@@ -4,8 +4,10 @@
 <head>
     <title>Project 1 - Becca Lange</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+        integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css" />
+    <link rel="stylesheet" href="css/e2.css" />
 </head>
 
 <body>
@@ -34,8 +36,6 @@
                 </li>
                 <li><?php echo $winner; ?> wins $<?php echo $jackpot; ?>! Play again.</li>
             </ul>
-        </div>
-        <div class="pure-u-1 pure-u-lg-1-1">
             <p><a class="pure-button" href="http://e2p1.beccalange.me">Play Again</a></p>
         </div>
     </div>
