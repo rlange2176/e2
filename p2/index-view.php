@@ -21,7 +21,7 @@
             <ul>
                 <li>You are Player 1. Select your fruit.</li>
                 <li>The House selects fruits 2 and 3.</li>
-                <li>Bananas are worth $100, cherries are $50, apples are $40, and lemons are $5. The
+                <li>Bananas are worth $100, cherries are $50, apples are $40, and lemons are $25. The
                     total of the fruits displayed in each round make up the Jackpot.</li>
                 <li>If all 3 cards match, you win the Jackpot! If not, The House keeps the Jackpot.
                 </li>
