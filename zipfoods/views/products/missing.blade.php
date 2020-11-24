@@ -5,7 +5,7 @@ Product Not Found
 @endsection
 
 @section('content')
-<h2>Product <?php $id ?> Not Found</h2>
+<h2>Product {{ $id }} Not Found</h2>
 
 <p>Uh oh - we were not able to find the product you were looking for.
 </p>

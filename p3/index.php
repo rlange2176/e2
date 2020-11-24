@@ -1,8 +1,14 @@
-<!doctype html>
-<html lang='en'>
-<head><title>Project 3 - Becca Lange</title>
-	<meta charset='utf-8'> </head>
-<body>
-	<h1>Project 3 Application</h1> 
-</body>
-</html>
+<?php
+session_start();
+//extract session data if fruit was selected / form was submitted
+if (isset($_SESSION['results'])) {
+    extract($_SESSION['results']);
+    $haveFruit = true;
+} else {
+    $haveFruit = false;
+}
+//reset game data for next page load
+$_SESSION['results'] = null;
+
+
+require 'index-view.php';
