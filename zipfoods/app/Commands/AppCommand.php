@@ -77,7 +77,7 @@ class AppCommand extends Command
     # Set up a review
             $review = [
         'name' => $faker->name,
-        'content' => $faker->sentences(3, true),
+        'review' => $faker->sentences(3, true),
         'product_id' => ($i % 2 == 0) ? 1 : 2, # Alternate between products 1 and 2
     ];
 
