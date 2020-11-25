@@ -30,16 +30,16 @@ class AppCommand extends Command
     }
     public function seed()
     {
-        $this->migrate();
-        $this->seed();
+        $this->seedProducts();
+        $this->seedReviews();
+
         dump('Seeding complete; check the database for your new data.');
     }
 
     public function fresh()
     {
-        $this->seedProducts();
-        $this->seedReviews();
-        dump('Seeding complete; check the database for your new data.');
+        $this->migrate();
+        $this->seed();
     }
 
     public function seedProducts()
@@ -77,7 +77,7 @@ class AppCommand extends Command
     # Set up a review
             $review = [
         'name' => $faker->name,
-        'review' => $faker->sentences(3, true),
+        'content' => $faker->sentences(3, true),
         'product_id' => ($i % 2 == 0) ? 1 : 2, # Alternate between products 1 and 2
     ];
 

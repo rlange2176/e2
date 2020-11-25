@@ -3,7 +3,7 @@ namespace App\Controllers;
 
 class ProductController extends Controller
 {
-    private $products;
+    //private $products;
 
     public function __construct($app)
     {
@@ -12,7 +12,7 @@ class ProductController extends Controller
 
     public function index()
     {
-        $products = $this->app->db()->all('products');
+        //$products = $this->app->db()->all('products');
         return $this->app->view('products.index', [
             'products' => $this->app->db()->all('products')
 ]);
@@ -50,17 +50,17 @@ class ProductController extends Controller
     {
         $this->app->validate([
     'name' => 'required',
-    'review' => 'required|minLength:200'
+    'content' => 'required|minLength:200'
 ]);
 
         #extract data from form submission
         $name = $this->app->input('name');
-        $review = $this->app->input('review');
+        $content = $this->app->input('content');
         $id = $this->app->input('id');
         #insert into database
         $data =[
                 'name' => $name,
-                'review' => $review,
+                'content' => $content,
                 'product_id' => $id,
 ];
         $this->app->db()->insert('reviews', $data);
