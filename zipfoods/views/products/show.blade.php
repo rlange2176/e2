@@ -15,7 +15,7 @@
 @elseif($confirmationName)
 
 <div class='alert alert-success'>
-    Thank you, {{ $confirmationName }} for your review!
+    Thank you, {{ $confirmationName }}, for your review!
 
 </div>
 @endif
@@ -40,8 +40,8 @@
     </div>
 
     <div class='form-group'>
-        <label for='review'>Review</label>
-        <textarea name='review' id='review' class='form-control'>{{ $app->old('review') }}</textarea>
+        <label for='content'>Review</label>
+        <textarea name='content' id='content' class='form-control'>{{ $app->old('content') }}</textarea>
     </div>
 
     <button type='submit' class='btn btn-primary'>Submit Review</button>
@@ -51,7 +51,7 @@
 @foreach($reviews as $review)
 <div class='review'>
     <span class='review-name'>{{ $review['name'] }}</span>
-    <p>{{ $review['review'] }}</p>
+    <p>{{ $review['content'] }}</p>
 </div>
 @endforeach
 @else

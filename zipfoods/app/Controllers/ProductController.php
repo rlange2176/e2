@@ -3,7 +3,7 @@ namespace App\Controllers;
 
 class ProductController extends Controller
 {
-    //private $products;
+    private $products;
 
     public function __construct($app)
     {
@@ -12,7 +12,7 @@ class ProductController extends Controller
 
     public function index()
     {
-        //$products = $this->app->db()->all('products');
+        $products = $this->app->db()->all('products');
         return $this->app->view('products.index', [
             'products' => $this->app->db()->all('products')
 ]);
