@@ -1,0 +1,8 @@
+
+/*add padding*/
+body {
+  padding: 2rem;
+}
+.error {
+  color: red;
+}
